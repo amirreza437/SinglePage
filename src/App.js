@@ -1,12 +1,24 @@
 import React from "react";
-import Hero from "./Layouts/Hero";
 import Page from "./Layouts/Page";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Free from "./Routes/Free";
+import Login from "./Routes/Login";
 
 function App() {
   return (
     <div className="App font-InterVariable ">
-      <Page />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Page />} />
+          <Route path="/free" element={<Free />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

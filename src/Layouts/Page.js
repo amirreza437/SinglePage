@@ -15,8 +15,14 @@ import hamester from './../Assets/images/hamster.jpg'
 import heroimage from './../Assets/images/heroimage.png'
 import palm from './../Assets/images/palm.png'
 import { useRef } from 'react'
-import { Datepicker, Input, initTE } from "tw-elements";
-initTE({ Datepicker, Input }, { allowReinits: true });
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+  } from "react-router-dom";
+import Login from '../Routes/Login.js'
+import Free from '../Routes/Free.js'
 
 
 function Page() {
@@ -74,14 +80,16 @@ function Page() {
                                 })
                             }}>Contact</a></li>
                         </ul>
-                        <ul className="flex space-x-6 justify-end">
-                            <li>
-                                <button className="bg-rose-400 p-2 rounded-lg hover:bg-white hover:text-rose-400 hover:scale-105 duration-150 ease-in-out">Try Lorem Free!</button>
-                            </li>
-                            <li>
-                                <button className="bg-indigo-400 p-2 rounded-lg hover:bg-white hover:text-indigo-400 hover:scale-105 duration-150 ease-in-out">Login</button>
-                            </li>
-                        </ul>
+                        <div>
+                            <ul className="flex space-x-6 justify-end">
+                                <li>
+                                    <Link to="/free" className="bg-rose-400 p-2 rounded-lg hover:bg-white hover:text-rose-400 hover:scale-105 duration-150 ease-in-out">Try Lorem Free!</Link>
+                                </li>
+                                <li>
+                                    <Link to="/login" className="bg-indigo-400 p-2 rounded-lg hover:bg-white hover:text-indigo-400 hover:scale-105 duration-150 ease-in-out">Login</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 {/* Hero Section */}

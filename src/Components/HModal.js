@@ -1,12 +1,17 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import ui from './../Assets/images/UI.jpg'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 export default function MyModal() {
   let [isOpen, setIsOpen] = useState(true)
 
   function closeModal(e) {
-    e.preventDefault()
     setIsOpen(false)
   }
 
@@ -60,10 +65,10 @@ export default function MyModal() {
                     </div>
                     <div>
                       <p className='text-white text-xl -translate-y-9'>Wanna join us?</p>
-                      <form className='space-y-4 text-center flex flex-col'>
+                      <form className='space-y-4 text-center flex flex-col' method='GET' action="#">
                         <input className='bg-zinc-600 text-gray-300 border border-zinc-600 rounded-md focus:outline-none focus:border-rose-400 focus:border-2 placeholder-gray-300 p-1' placeholder='Name: ' />
                         <input className='bg-zinc-600 text-gray-300 border border-zinc-600 rounded-md focus:outline-none focus:border-rose-400 focus:border-2 placeholder-gray-300 p-1' placeholder='Email: ' />
-                        <button className='bg-rose-400 text-white rounded-md hover:bg-indigo-400 py-1 px-2'>Submit</button>                      
+                        <button className='bg-rose-400 text-white rounded-md hover:bg-indigo-400 py-1 px-2' type='submit'>Submit</button>                      
                       </form>
                     </div>
                   </div>
