@@ -223,7 +223,7 @@ function Page() {
                             <ul className='mt-10'>
                                 <li>
                                     <h5 className='font-bold text-sm'>FRIENDS & FAMILY</h5>
-                                    <p className='text-zinc-300 font-medium'>The core Pixel Lab team is Robby Ingebretsen, Joel Fillmore, Kevin Moore and Adam Kinney.</p>
+                                    <p className='text-zinc-300 font-medium'>The core Lorem UI team is Robby Ingebretsen, Joel Fillmore, Kevin Moore and Adam Kinney.</p>
                                     <p className='text-zinc-300 font-medium mt-2'>Also, a big thanks to Fernanda Frick for her help with the illustrations on this page (she's the best).</p>
                                 </li>
                             </ul>
