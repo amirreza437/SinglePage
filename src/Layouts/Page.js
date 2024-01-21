@@ -50,15 +50,15 @@ function Page() {
         <>
             <div className='h-screen' style={style} ref={homeRef} id='home'>
                 {/* Header */}
-                <div className="bg-indigo-800 rounded-lg mr-32 ml-32 translate-y-8">
-                    <div className="grid grid-cols-3 text-white p-7 items-center">
-                        <div className="flex items-center">
+                <div className="bg-indigo-800 rounded-lg md:mr-32 md:ml-32 translate-y-8">
+                    <div className="grid md:grid-cols-3 text-white p-7 items-center">
+                        <div className="hidden md:flex items-center">
                             <h2 className="text-4xl font-bold order-1 ml-1"><a>Lorem</a></h2>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mt-1 text-rose-400">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
                             </svg>
                         </div>
-                        <ul className="flex space-x-6">
+                        <ul className="flex space-x-6 mx-6 md:mx-0">
                             <li className="hover:text-rose-400 hover:underline hover:decoration-rose-400 hover:underline-offset-4"><a className="cursor-pointer" onClick={() => {
                                 homeRef.current?.scrollIntoView({
                                     behavior: 'smooth'
@@ -81,7 +81,7 @@ function Page() {
                             }}>Contact</a></li>
                         </ul>
                         <div>
-                            <ul className="flex space-x-6 justify-end">
+                            <ul className="flex space-x-2 md:space-x-6 mt-8 md:mt-0 md:justify-end mx-24 md:mx-0">
                                 <li>
                                     <Link to="/free" className="bg-rose-400 p-2 rounded-lg hover:bg-white hover:text-rose-400 hover:scale-105 duration-150 ease-in-out">Try Lorem Free!</Link>
                                 </li>
@@ -93,10 +93,10 @@ function Page() {
                     </div>
                 </div>
                 {/* Hero Section */}
-                <div className='ml-80 mt-60 text-white'>
+                <div className='mt-56 mx-5 md:ml-80 md:mt-60 text-white'>
                     <p className='text-8xl'>Ui Design</p>
-                    <p className='text-lg font-extralight ml-10'>Design your webApp with us</p>
-                    <button className='text-rose-400 outline outline-rose-400 outline-offset-4 hover:bg-rose-400 hover:text-white duration-300 ease-in-out rounded-lg ml-28 mt-4 px-1'>Get Started</button>
+                    <p className='text-lg font-extralight mx-24 mt-5 md:mt-0 md:ml-10'>Design your webApp with us</p>
+                    <button className='text-rose-400 outline outline-rose-400 outline-offset-4 hover:bg-rose-400 hover:text-white duration-300 ease-in-out rounded-lg md:ml-28 md:mt-4 mx-40 mt-5 px-1'>Get Started</button>
                 </div>
             </div>
             <div className="mt-10">
@@ -113,7 +113,7 @@ function Page() {
                 </div>
                 <div className='bg-zinc-800 text-white text-center mt-28 py-14'>
                     <h3 className='text-3xl font-light'>OUR CLIENTS</h3>
-                    <div className='grid grid-cols-6 ml-40 mr-40 mt-20 gap-2'>
+                    <div className='grid grid-cols-2 md:grid-cols-6 mx-10 md:mx-40 mt-20 gap-2'>
                     <img className='hover:scale-110 duration-150 ease-in-out' src={microsoft} />
                     <img className='hover:scale-110 duration-150 ease-in-out' src={bmw} />
                     <img className='hover:scale-110 duration-150 ease-in-out' src={crt} />
@@ -133,43 +133,43 @@ function Page() {
                     <div className='w-[170px]'>
                         <div className='text-white bg-black text-center py-3'>ABOUT US</div>
                     </div>
-                    <div className='text-center mx-40 mt-10'>
+                    <div className='text-center mx-6 md:mx-40 mt-10'>
                         <p className='text-5xl'><span className='font-extrabold text-rose-400'>Lorem Ui</span> is an award winning design and development studio in Tehran.</p>
                     </div>
-                    <div className='grid grid-cols-4 divide-solid divide-x gap-x-2 divide-black mx-40 mt-20'>
+                    <div className='grid md:grid-cols-4 md:divide-solid md:divide-x gap-y-10 md:gap-x-2 divide-black mx-40 mt-20'>
                         <div>
-                            <div className='space-y-6'>
+                            <div className='md:space-y-6'>
                                 <h4 className='font-bold'>FOUNDED</h4>
                                 <span className='text-6xl'>2008</span>
                                 <p className='font-light'>We can't believe it either. Where does the time go?</p>
                             </div>
                         </div>
                         <div>
-                            <div className='ml-4 space-y-6'>
+                            <div className='md:ml-4 md:space-y-6'>
                                 <h4 className='font-bold'>SUCCESSFUL PROJECTS</h4>
                                 <span className='text-6xl'>68</span>
                                 <p className='font-light'>And these are just the big ones! Add a dozen or so open source projects and countless smaller jobs.</p>
                             </div>
                         </div>
                         <div>
-                            <div className='ml-4 space-y-6'>
+                            <div className='md:ml-4 md:space-y-6'>
                                 <h4 className='font-bold'>VIEWS</h4>
                                 <span className='text-6xl'>90M+</span>
                                 <p className='font-light'>That's what the analytics tell us... our projects have delighted over 90 million people!</p>
                             </div>
                         </div>
                         <div>
-                            <div className='ml-4 space-y-6'>
-                                <h4 className='font-bold'>TE  STING DEVICES</h4>
+                            <div className='md:ml-4 md:space-y-6'>
+                                <h4 className='font-bold'>TESTING DEVICES</h4>
                                 <span className='text-6xl'>8</span>
                                 <p className='font-light'>That's the number of testing devices on my desk right now. We're pretty thorough.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-center items-center text-7xl font-extrabold mt-28'>
+                    <div className='flex justify-center items-center text-7xl font-extrabold md:mx-0 mt-28 border-t-4 py-10 md:py-0 border-t-red-400 md:border-0'>
                         FAQ
                     </div>
-                    <div className='mx-64 mt-20'>
+                    <div className='mx-20 mt-20 md:mx-64 md:mt-20'>
                         <ul className='space-y-14'>
                             <li className='space-y-2'>
                                 <h4 className='text-2xl font-bold'>What are your areas of expertise?</h4>
@@ -199,12 +199,12 @@ function Page() {
                                 <h3 className='text-white text-6xl font-bold'>Say Hello</h3>
                             </div>
                             <div className='flex justify-center'>
-                                <form className='bg-zinc-800 w-2/4 rounded-lg grid place-items-center gap-4 mt-20 p-5'>
+                                <form className='bg-zinc-800 md:w-2/4 md:rounded-lg grid place-items-center gap-4 mt-20 p-5'>
                                     <h3 className='text-white text-3xl font-bold'>Contact Form</h3>
                                     <p className='text-white text-sm font-light'>We would appreiciate your comments and views</p>
-                                    <input className='mt-10 border p-2 w-1/3 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='From:'/>
-                                    <input className='border p-2 w-1/3 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='Email:'/>
-                                    <textarea className='p-3 rounded-lg resize-none placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='Any Thoughts? ' rows='10' cols='50'></textarea>
+                                    <input className='mt-10 border p-2 md:w-1/3 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='From:'/>
+                                    <input className='border p-2 md:w-1/3 rounded-lg shadow-sm placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='Email:'/>
+                                    <textarea className='p-1 md:p-3 rounded-lg resize-none placeholder-slate-400 focus:outline-none focus:border-rose-400 focus:ring-rose-400 focus:ring-2' placeholder='Any Thoughts? ' rows='10' cols='50'></textarea>
                                     <button className='text-white underline decoration-white underline-offset-4 hover:underline-offset-8 duration-150 text-lg'>Send</button>
                                 </form>
                             </div>
@@ -212,7 +212,7 @@ function Page() {
                     </div>
                     {/* Footer */}
                     <div className='bg-zinc-800 text-white'>
-                        <div className=' grid grid-cols-3 gap-10 mx-52'>
+                        <div className='grid md:grid-cols-3 gap-4 md:gap-10 mx-10 md:mx-52'>
                             <ul className='mt-10'>
                                 <li>
                                     <h5 className='font-bold text-sm'>CONTACT</h5>
@@ -255,7 +255,7 @@ function Page() {
                                 </li>
                             </ul>
                             <div>
-                                <img src={hamester} className='w-28 -translate-y-32'/>
+                                <img src={hamester} className='w-28 mx-32 md:mx-0 md:-translate-y-32'/>
                             </div>
                         </div>
                     </div>

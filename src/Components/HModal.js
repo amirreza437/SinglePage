@@ -57,14 +57,14 @@ export default function MyModal() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-[800px] transform overflow-hidden rounded-2xl bg-neutral-800 p-6 text-left align-middle shadow-xl transition-all">
-                  <div className='grid grid-cols-2 items-center'>
-                    <div className='text-white space-y-4 mr-5'>
+                  <div className='grid md:grid-cols-2 items-center'>
+                    <div className='text-white space-y-2 md:space-y-4 mr-5'>
                       <h2 className='text-4xl font-semibold mb-8'>How does Lorem Tool work?</h2>
                       <h4 className='text-xl'>Overview</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
                     </div>
                     <div>
-                      <p className='text-white text-xl -translate-y-9'>Wanna join us?</p>
+                      <p className='text-white mt-6 md:mt-0 text-xl -translate-y-3 md:-translate-y-9'>Wanna join us?</p>
                       <form className='space-y-4 text-center flex flex-col' method='GET' action="#">
                         <input className='bg-zinc-600 text-gray-300 border border-zinc-600 rounded-md focus:outline-none focus:border-rose-400 focus:border-2 placeholder-gray-300 p-1' placeholder='Name: ' />
                         <input className='bg-zinc-600 text-gray-300 border border-zinc-600 rounded-md focus:outline-none focus:border-rose-400 focus:border-2 placeholder-gray-300 p-1' placeholder='Email: ' />

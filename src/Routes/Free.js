@@ -12,8 +12,8 @@ function Free() {
 
     return (
         <div className='h-screen' style={style}>
-            <div className='mx-36 translate-y-20'>
-                <div className='grid grid-cols-3 gap-6'>
+            <div className='bg-rose-400 md:bg-transparent p-8 md:p-0 md:mx-36 md:translate-y-20'>
+                <div className='grid md:grid-cols-3 gap-y-10 md:gap-6'>
                     <div className='bg-zinc-800 text-white rounded-3xl p-10 space-y-5'>
                         <h3 className='text-xl font-bold'>Freelancer</h3>
                         <p className='text-gray-300 font-light'>The essentials to provide your best work for clients.</p>
