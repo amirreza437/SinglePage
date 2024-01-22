@@ -11,14 +11,14 @@ function Free() {
     }
 
     return (
-        <div className='h-screen' style={style}>
-            <div className='bg-rose-400 md:bg-transparent p-8 md:p-0 md:mx-36 md:translate-y-20'>
-                <div className='grid md:grid-cols-3 gap-y-10 md:gap-6'>
+        <div className='bg-rose-400 h-screen'>
+            <div className='bg-rose-400 p-8 lg:p-0 lg:mx-36 lg:translate-y-20'>
+                <div className='grid md:max-lg:grid-cols-1 lg:max-[1160px]:grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-6'>
                     <div className='bg-zinc-800 text-white rounded-3xl p-10 space-y-5'>
                         <h3 className='text-xl font-bold'>Freelancer</h3>
                         <p className='text-gray-300 font-light'>The essentials to provide your best work for clients.</p>
                         <h3 className='text-4xl font-bold'>Free</h3>
-                        <button className='bg-rose-400 font-semibold w-full rounded-md p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
+                        <button className='bg-rose-400 font-semibold w-full rounded-lg p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
                         <ul className='space-y-3 font-light text-gray-300'>
                             <li className='flex space-x-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
@@ -45,7 +45,7 @@ function Free() {
                         </div>
                         <p className='text-gray-300 font-light'>A plan that scales with your rapidly growing business.</p>
                         <h3 className='space-x-1'><span className='text-4xl font-bold'>$30</span><span>/month</span></h3>
-                        <button className='bg-indigo-500 font-semibold w-full rounded-md p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
+                        <button className='bg-indigo-500 font-semibold w-full rounded-lg p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
                         <ul className='space-y-3 font-light text-gray-300'>
                             <li className='flex space-x-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
@@ -73,7 +73,7 @@ function Free() {
                         <h3 className='text-xl font-bold'>Enterprise</h3>
                         <p className='text-gray-300 font-light'>Dedicated support and infrastructure for your company.</p>
                         <h3 className='space-x-1'><span className='text-4xl font-bold'>$48</span><span>/month</span></h3>
-                        <button className='bg-rose-400 font-semibold w-full rounded-md p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
+                        <button className='bg-rose-400 font-semibold w-full rounded-lg p-2 hover:bg-zinc-600 duration-100'><a href='#'>Buy plan</a></button>
                         <ul className='space-y-3 font-light text-gray-300'>
                             <li className='flex space-x-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
